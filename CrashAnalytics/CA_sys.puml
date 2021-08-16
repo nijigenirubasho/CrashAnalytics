@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:开发人员: as Dev
+
+Dev -left-> (崩溃详情)
+(崩溃详情) -up.> (缺陷定位) : <<include>>
+(崩溃详情) -left.> (环境特征) : <<include>>
+
+Dev -up-> (预处理)
+(预处理) -up.> (系统配置) : <<include>>
+(预处理) .> (系统集成) : <<include>>
+
+Dev -right-> (SDK配置)
+(SDK配置) -up.> (自定义信息) : <<include>>
+(SDK配置) -down.> (测试崩溃) : <<include>>
+'(SDK配置) .> (持久化存储) :<<include>>
+
+Dev -down-> (后端管理)
+'(后端管理) -right.> (条目管理) : <<include>>
+(后端管理) -down.> (折叠) : <<include>>
+(后端管理) -right.> (可视化) : <<include>>
+(后端管理) -left.> (附加记录) : <<include>>
+
+@enduml

@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+(SDK配置) -down.> (测试崩溃) : <<include>>
+(SDK配置) -down.> (自定义信息) : <<include>>
+(自定义日志) -up.> (自定义信息) : <<extend>>
+(自定义属性) -up.> (自定义信息) : <<extend>>
+(自定义异常) -up.> (自定义信息) : <<extend>>
+
+@enduml

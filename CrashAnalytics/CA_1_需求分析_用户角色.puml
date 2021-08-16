@@ -1,0 +1,24 @@
+@startuml
+
+:开发人员: as Dev
+
+Dev -up-> (项目管理)
+(项目管理) -up.> (用户注册) : <<include>>
+(项目管理) -left.> (项目创建) : <<include>>
+(项目管理) .> (项目删除) : <<include>>
+
+Dev -right-> (崩溃获取)
+(崩溃获取) -up.> (崩溃捕获) : <<include>>
+(崩溃获取) -right.> (崩溃保存) : <<include>>
+(崩溃获取) -down.> (崩溃上报) : <<include>>
+
+Dev -down-> (崩溃详情)
+(崩溃详情) -down.> (环境特征) : <<include>>
+(崩溃详情) -right.> (缺陷定位) : <<include>>
+(崩溃详情) -left.> (自定义信息) : <<include>>
+
+Dev -left-> (崩溃管理)
+(崩溃管理) -up.> (可读性) : <<include>>
+(崩溃管理) -left.> (附加记录) : <<include>>
+(崩溃管理) -down.> (信息折叠) : <<include>>
+@enduml

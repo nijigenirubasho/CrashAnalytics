@@ -1,0 +1,12 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+class CA {
++initialize(authInfo, productInfo)
++log(log)
++setProperty(key, value)
++onCustomException(throwable)
++crash()
+}
+
+@enduml

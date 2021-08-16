@@ -1,0 +1,10 @@
+@startuml
+
+:开发人员: as Dev
+
+Dev --> (项目管理)
+Dev --> (崩溃获取)
+Dev --> (崩溃详情)
+Dev --> (崩溃管理)
+
+@enduml

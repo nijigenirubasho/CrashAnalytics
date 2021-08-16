@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+:开发人员: as Dev
+
+rectangle 使用流程 {
+Dev --> (预处理)
+Dev --> (SDK配置)
+Dev --> (后端管理)
+}
+rectangle 作用 {
+Dev --> (崩溃详情)
+}
+@enduml

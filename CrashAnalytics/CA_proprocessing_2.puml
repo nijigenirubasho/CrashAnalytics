@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+:开始;
+:注册账号;
+:创建鉴权令牌;
+:创建产品项;
+:导入SDK;
+:初始化传参;
+:结束;
+
+@enduml

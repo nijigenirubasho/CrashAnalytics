@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+'https://blog.csdn.net/changsimeng/article/details/54410986
+
+namespace java.lang {
+    class Error << unchecked >>
+    class RuntimeException << unchecked >>
+    Throwable <|-- Error
+    Throwable <|-- Exception
+    Exception <|-- RuntimeException
+    RuntimeException <|-- IllegalStateException
+    Exception <|-- ReflectiveOperationException
+    ReflectiveOperationException <|-- ClassNotFoundException
+}
+
+namespace java.io {
+    java.lang.Exception <|-- IOException
+    IOException <|-- FileNotFoundException
+}
+
+namespace java.net {
+    java.io.IOException <|-- UnknownHostException
+}
+
+@enduml

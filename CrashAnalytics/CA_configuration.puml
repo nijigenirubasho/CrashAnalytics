@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+:开始;
+:调用测试崩溃接口;
+if (应用为发布版本吗？) then (不是，为调试版本)
+:产生崩溃;
+note left
+用于测试本系统是否工作正常
+end note
+else (是)
+endif
+:结束;
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+'https://plantuml.com/activity-diagram-beta
+
+(预处理) -down.> (系统配置) : <<include>>
+(预处理) -down.> (系统集成) : <<include>>
+(系统配置) -down.> (注册账号) : <<include>>
+(系统配置) -down.> (创建鉴权令牌) : <<include>>
+(系统配置) -down.> (创建产品项) : <<include>>
+(系统集成) -down.> (导入SDK) : <<include>>
+(系统集成) -down.> (初始化传参) : <<include>>
+
+@enduml
